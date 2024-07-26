@@ -39,19 +39,21 @@ header p {
 
 .click-for-random {
   position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 28%;
+  font-size: 0.75rem;
+  user-select: none;
+  cursor: pointer;
 }
 
 #random-recipes {
   text-align: center;
   border: 1px solid #63c196;
+  border-radius: 20px;
   /* box-shadow: 1px 1px 50px #214d39; */
   width: 60%;
-}
-
-#random-recipes p {
-  font-size: 0.75rem;
-  user-select: none;
-  cursor: pointer;
+  padding-bottom: 1%;
 }
 
 .recipes-container {
@@ -62,6 +64,7 @@ header p {
 .recipes-container img {
   width: 250px;
   transition: 2s;
+  margin-top: 10px;
 }
 
 .recipes-container img:hover {
@@ -78,16 +81,24 @@ header p {
 .top-right {
   display: flex;
   flex-direction: column;
+  margin-right: 3%;
 }
 
 .top-right h2 {
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 5px;
   color: #23577a;
+  text-align: end;
 }
 
 .top-right h3 {
   color: #63c196;
   text-align: end;
+}
+
+.ingredients p {
+  text-align: end;
+  font-size: 1rem;
 }
 
 .top-right ul {
@@ -100,4 +111,20 @@ header p {
 
 .recipes-container h3 {
   color: #63c196;
+}
+
+.preparation p {
+  text-align: end;
+}
+
+.count-macros {
+  margin-top: 35px;
+}
+
+.count-macros h2 {
+  color: #63c196;
+}
+
+.count-macros h2 span {
+  color: #23577a;
 }

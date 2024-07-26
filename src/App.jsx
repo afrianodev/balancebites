@@ -1,3 +1,4 @@
+import CountMacros from "./components/CountMacros.jsx";
 import Header from "./components/Header.jsx";
 import Recipes from "./components/Recipes.jsx";
 
@@ -7,6 +8,7 @@ function App() {
     <div id="full-container">
       <Header />
       <Recipes />
+      <CountMacros />
     </div>
   );
 }
