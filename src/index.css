@@ -119,6 +119,7 @@ header p {
 
 .count-macros {
   margin-top: 35px;
+  width: 60%;
 }
 
 .count-macros h2 {
@@ -127,4 +128,10 @@ header p {
 
 .count-macros h2 span {
   color: #23577a;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
