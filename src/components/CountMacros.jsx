@@ -77,45 +77,50 @@ export default function CountMacros() {
         setActivityLevel('1');
     }
 
+    const handleBack = () => {
+        setResult(null)
+    }
+
     return (
         <div className="count-macros">
             <h2>Count your <span>Macros</span></h2>
 
-            
-            <label htmlFor="option">Your gender: </label>
-            <select id="option" value={gender} onChange={handleGender}>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-            </select>
-            
-            <label>Your age: </label>
-            <input type="number"
-            value={age}
-            onChange={handleAge}
-            placeholder="Enter your age"></input>
+            {result===null ? <div className="inputs-container">
+                <label htmlFor="option">Your gender: </label>
+                <select id="option" value={gender} onChange={handleGender}>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+                
+                <label>Your age: </label>
+                <input type="number"
+                value={age}
+                onChange={handleAge}
+                placeholder="Enter your age"></input>
 
-            <label htmlFor="option">Your activity level: </label>
-            <select id="option" value={activityLevel} onChange={handleActivityLevel}>
-                <option value="1">Sedentary (little or no exercise)</option>
-                <option value="2">Lightly active (light exercise 1-3 days/week)</option>
-                <option value="3">Moderately active (moderate exercise 3-5 days/week)</option>
-                <option value="4">Very active (hard exercise 6-7 days a week)</option>
-                <option value="5">Super active (very hard exercise 2x/day)</option>
-            </select>
+                <label htmlFor="option">Your activity level: </label>
+                <select id="option" value={activityLevel} onChange={handleActivityLevel}>
+                    <option value="1">Sedentary (little or no exercise)</option>
+                    <option value="2">Lightly active (light exercise 1-3 days/week)</option>
+                    <option value="3">Moderately active (moderate exercise 3-5 days/week)</option>
+                    <option value="4">Very active (hard exercise 6-7 days a week)</option>
+                    <option value="5">Super active (very hard exercise 2x/day)</option>
+                </select>
 
-            <label>Your weight in Kg: </label>
-            <input type="number"
-            value={num1}
-            onChange={handleNum1Change}
-            placeholder="Enter your weight"></input>
+                <label>Your weight in Kg: </label>
+                <input type="number"
+                value={num1}
+                onChange={handleNum1Change}
+                placeholder="Enter your weight"></input>
 
-            <label>Your Height in cm: </label>
-            <input type="number"
-            value={num2}
-            onChange={handleNum2Change}
-            placeholder="Enter your height"></input>
+                <label>Your Height in cm: </label>
+                <input type="number"
+                value={num2}
+                onChange={handleNum2Change}
+                placeholder="Enter your height"></input>
 
-            <button onClick={handleResult}>Calculate</button>
+                <button onClick={handleResult}>Calculate</button>
+            </div> : <div>{result}<button onClick={handleBack}>Calculate Again</button></div>}
 
             {/* <h3>Your results:</h3>
             <p>Your estimated caloric needs are approximately 2550 calories per day</p>
@@ -126,8 +131,6 @@ export default function CountMacros() {
             <h4>Fats:</h4>
             <p>50 grams.</p> */}
 
-
-            {result !== null && <div>{result}</div>}
         </div>
     )
 }
