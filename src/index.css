@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -25,11 +28,6 @@ html {
   align-items: center;
 }
 
-header {
-  text-align: center;
-  margin: 3rem 0;
-}
-
 header p {
   margin: 0;
   font-size: 1rem;
@@ -52,7 +50,6 @@ header p {
   border: 1px solid #63c196;
   border-radius: 20px;
   /* box-shadow: 1px 1px 50px #214d39; */
-  width: 60%;
   padding-bottom: 1%;
 }
 
@@ -85,7 +82,7 @@ header p {
 }
 
 .top-right h2 {
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 5px;
   color: #23577a;
   text-align: end;
@@ -119,7 +116,6 @@ header p {
 
 .count-macros {
   margin-top: 35px;
-  width: 60%;
 }
 
 .count-macros h2 {
@@ -130,8 +126,17 @@ header p {
   color: #23577a;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  background-color: #23577a;
+  color: white;
 }
