@@ -20,19 +20,19 @@ export const healthyRecipes = [
     },
     {
         title: 'Beans tacos',
-        ingredients: 'Cooked black beans, olive oil, onion, garlic, ground cumin, smoked paprika, chili powder, salt, pepper, tortillas, shredded lettuce, diced tomatoes, shredded cheese, sour cream, fresh cilantro, lime wedges.',
+        ingredients: 'Cooked black beans, onion, garlic, chili powder, salt, pepper, tortillas, shredded lettuce, diced tomatoes, shredded cheese, sour cream, fresh cilantro.',
         preparation: "Sauté onion and garlic, then add spices and beans with broth. Heat through. Serve in warmed tortillas with toppings and lime.",
         image: tacosBeans,
     },
     {
         title: 'Lentils soup',
-        ingredients: 'Lentils, olive oil, onion, garlic, carrots, celery, vegetable or chicken broth, diced tomatoes, ground cumin, paprika, bay leaf, salt, pepper.',
+        ingredients: 'Lentils, onion, garlic, carrots, celery, vegetable or chicken broth, diced tomatoes, ground cumin, paprika, bay leaf, salt, pepper.',
         preparation: "Sauté onion, garlic, carrots, and celery in olive oil. Add lentils, broth, tomatoes, spices, and bay leaf. Simmer until lentils are tender.",
         image: lentilsSoup,
     },
     {
         title: 'Veggie quinoa',
-        ingredients: 'Quinoa, olive oil, bell peppers, zucchini, cherry tomatoes, onion, garlic, vegetable broth, lemon juice, salt, pepper, fresh herbs (e.g., parsley).',
+        ingredients: 'Quinoa, bell peppers, zucchini, cherry tomatoes, onion, garlic, vegetable broth, salt, pepper, fresh herbs (e.g., parsley).',
         preparation: "Sauté onion and garlic in olive oil, add chopped vegetables and cook until tender. Stir in cooked quinoa, broth, lemon juice, and season with salt, pepper, and herbs.",
         image: veggieQuinoa,
     }

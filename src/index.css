@@ -78,30 +78,30 @@ header p {
 .top-right {
   display: flex;
   flex-direction: column;
-  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .top-right h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   color: #23577a;
-  text-align: end;
+  text-align: start;
 }
 
 .top-right h3 {
   color: #63c196;
-  text-align: end;
+  text-align: start;
 }
 
 .ingredients p {
-  text-align: end;
+  text-align: start;
   font-size: 1rem;
 }
 
 .top-right ul {
   display: flex;
   gap: 10px;
-  text-align: end;
+  text-align: start;
   list-style: none;
   color: #232323;
 }
@@ -111,7 +111,7 @@ header p {
 }
 
 .preparation p {
-  text-align: end;
+  text-align: start;
 }
 
 .count-macros {
