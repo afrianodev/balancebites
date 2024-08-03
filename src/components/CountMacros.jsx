@@ -61,7 +61,7 @@ export default function CountMacros() {
 
         
         setResult(<div className>
-            <h3 className="text-xl font-semibold">Your results:</h3>
+            <h3 className="text-lg sm:text-base font-semibold">Your results:</h3>
             <p>Your estimated caloric needs are approximately {totalCalories.toFixed(2)} calories per day</p>
             <div className="flex gap-8">
                 <div className="flex">
@@ -91,30 +91,30 @@ export default function CountMacros() {
     }
 
     return (
-        <motion.div className="count-macros w-[60vw]">
-            <h2 className="text-2xl font-semibold">Count your <span>Macros</span></h2>
+        <motion.div className="count-macros w-[85vw] sm:w-[60vw] mt-4 sm:mt-8">
+            <h2 className="text-xl sm:text-2xl font-semibold">Count your <span>Macros</span></h2>
 
             {result===null ? <div className="mt-2 flex flex-col">
-                <div className="flex gap-6">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
                     <div className="flex gap-2">
-                    <label htmlFor="option">Your gender: </label>
-                    <select id="option" value={gender} onChange={handleGender} className="border border-black h-6 rounded-sm">
+                    <label htmlFor="option" className="text-sm sm:text-base">Your gender: </label>
+                    <select id="option" value={gender} onChange={handleGender} className="border border-black h-6 rounded-sm text-sm sm:text-base">
                         <option value="1">Male</option>
                         <option value="2">Female</option>
                     </select>
                     </div>
                     <div className="flex gap-2">
-                    <label>Your age: </label>
+                    <label className="text-sm sm:text-base">Your age: </label>
                     <input type="number"
                     value={age}
                     onChange={handleAge}
-                    placeholder="Enter your age" className="border border-black p-2 h-6 rounded-sm w-28"></input>
+                    placeholder="Enter your age" className="border border-black p-2 h-6 rounded-sm w-28 text-sm sm:text-base"></input>
                     </div>
                 </div>
 
-                <div className="flex gap-2 mt-2">
-                <label htmlFor="option">Your activity level: </label>
-                <select id="option" value={activityLevel} onChange={handleActivityLevel} className="border border-black h-6 rounded-sm">
+                <div className="flex flex-col sm:flex-row gap-0 sm:gap-2 mt-1 sm:mt-2">
+                <label htmlFor="option" className="text-sm sm:text-base">Your activity level: </label>
+                <select id="option" value={activityLevel} onChange={handleActivityLevel} className="border border-black h-6 rounded-sm text-sm sm:text-base">
                     <option value="1">Sedentary (little or no exercise)</option>
                     <option value="2">Lightly active (light exercise 1-3 days/week)</option>
                     <option value="3">Moderately active (moderate exercise 3-5 days/week)</option>
@@ -123,21 +123,21 @@ export default function CountMacros() {
                 </select>
                 </div>
 
-                <div className="mt-2 flex gap-6">
+                <div className="mt-2 flex flex-col sm:flex-row gap-2 sm:gap-6">
                     <div>
-                    <label>Your weight in Kg: </label>
+                    <label className="text-sm sm:text-base">Your weight in Kg: </label>
                     <input type="number"
                     value={num1}
                     onChange={handleNum1Change}
-                    placeholder="Enter your weight" className="border border-black p-2 h-6 rounded-sm w-32"></input>
+                    placeholder="Enter your weight" className="border border-black p-2 h-6 rounded-sm w-32 text-sm sm:text-base"></input>
                     </div>
 
                     <div>
-                    <label>Your Height in cm: </label>
+                    <label className="text-sm sm:text-base">Your Height in cm: </label>
                     <input type="number"
                     value={num2}
                     onChange={handleNum2Change}
-                    placeholder="Enter your height" className="border border-black p-2 h-6 rounded-sm w-32"></input>
+                    placeholder="Enter your height" className="border border-black p-2 h-6 rounded-sm w-32 text-sm sm:text-base"></input>
                     </div>
                 </div>
 
