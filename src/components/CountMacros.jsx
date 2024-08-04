@@ -60,10 +60,10 @@ export default function CountMacros() {
         let fats = ((totalCalories*30)/100)/9;
 
         
-        setResult(<div className>
-            <h3 className="text-lg sm:text-base font-semibold">Your results:</h3>
+        setResult(<div className='flex flex-col gap-2'>
+            <h3 className="text-lg sm:text-base font-semibold mt-2">Your results:</h3>
             <p>Your estimated caloric needs are approximately {totalCalories.toFixed(2)} calories per day</p>
-            <div className="flex gap-8">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-8">
                 <div className="flex">
                 <h4>Protein: </h4>
                 <p>{proteins.toFixed(1)} grams.</p>

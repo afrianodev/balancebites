@@ -14,7 +14,7 @@ export default function Recipes() {
   };
 
   return (
-    <motion.section id='random-recipes' className="mx-auto w-[92vw] sm:w-[60vw] h-[75vh] sm:h-[45vh] overflow-hidden">
+    <motion.section id='random-recipes' className="mx-auto w-[92vw] sm:w-[60vw] sm:h-[45vh] overflow-hidden">
       <p className="text-xs sm:text-base select-none cursor-pointer mt-1" onClick={handleClick}>
         Click for another random recipe.
       </p>

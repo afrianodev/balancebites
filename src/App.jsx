@@ -1,4 +1,5 @@
 import CountMacros from "./components/CountMacros.jsx";
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Recipes from "./components/Recipes.jsx";
 import { delay, motion } from "framer-motion";
@@ -66,6 +67,9 @@ function App() {
       </motion.div>
       <motion.div variants={childVariants3}>
         <CountMacros />
+      </motion.div>
+      <motion.div variants={childVariants}>
+        <Footer />
       </motion.div>
     </motion.div>
   );
