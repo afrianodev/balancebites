@@ -18,7 +18,7 @@ export default function Recipes() {
       <p className="text-xs sm:text-base select-none cursor-pointer mt-1" onClick={handleClick}>
         Click for another random recipe.
       </p>
-      <div className="recipes-container flex sm:flex-col">
+      <div className="recipes-container flex sm:flex-col relative">
         <motion.div
           key={recipeIndex}
           initial={{ opacity: 0 }}
@@ -42,11 +42,11 @@ export default function Recipes() {
               src={healthyRecipes[recipeIndex].image}
               alt={healthyRecipes[recipeIndex].title}
               className="mr-[1%] w-[15%]"
-              key={rotateKey}
-              initial={{ opacity: 0, x: 250 }}
+              key={recipeIndex}
+              initial={{ opacity: 0, x: 235 }}
               animate={{ rotate: -90, opacity: 1, x: 0  }}
               exit={{ opacity: 0, x: -200 }}
-              transition={{ duration: 0.5, ease: "easeIn" }}
+              transition={{ duration: 0.3, ease: "easeOut", delay: 0 }}
             />
           </div>
         </motion.div>
