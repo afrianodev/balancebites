@@ -31,10 +31,19 @@ export default function CountMacros() {
 
     const handleResult = () => {
 
+        if (num1 === '' || num2 === '' || age === '' || num1 <= 0 || num2 <= 0 || age <= 0) {
+            setResult(
+                <div className="flex my-9">
+                    <p>Please set valid numbers.</p>
+                </div>
+            );
+            return;
+        }
+
         let bmr;
 
         if(num1 === '' || num2 === '' || num1 < 0 || num2 < 0 || age < 0 || age === '') {
-            bmr = 'Por favor, escribe un numero valido.'
+            bmr = 'Please enter a valid number.'
         } else if(gender === '1') {
             bmr = 88.362+(13.397*num1)+(4.799*num2)-(5.677*age)
         } else if(gender==='2') {
@@ -59,7 +68,7 @@ export default function CountMacros() {
         let carbs = ((totalCalories*40)/100)/4;
         let fats = ((totalCalories*30)/100)/9;
 
-        
+        //Put here an extra feature, with 3 buttons, that show you, a normal diet, a fat loss diet and a gain diet.
         setResult(<div className='flex flex-col gap-2'>
             <h3 className="text-lg sm:text-base font-semibold mt-2">Your results:</h3>
             <p>Your estimated caloric needs are approximately {totalCalories.toFixed(2)} calories per day</p>
@@ -108,7 +117,7 @@ export default function CountMacros() {
                     <input type="number"
                     value={age}
                     onChange={handleAge}
-                    placeholder="Enter your age" className="border border-black p-2 h-6 rounded-sm w-28 text-sm sm:text-base"></input>
+                    placeholder="Enter your age" className="border border-black p-2 h-6 rounded-sm w-28 text-sm sm:text-base" required></input>
                     </div>
                 </div>
 
@@ -129,7 +138,7 @@ export default function CountMacros() {
                     <input type="number"
                     value={num1}
                     onChange={handleNum1Change}
-                    placeholder="Enter your weight" className="border border-black p-2 h-6 rounded-sm w-32 text-sm sm:text-base"></input>
+                    placeholder="Enter your weight" className="border border-black p-2 h-6 rounded-sm w-32 text-sm sm:text-base" required></input>
                     </div>
 
                     <div>
@@ -137,7 +146,7 @@ export default function CountMacros() {
                     <input type="number"
                     value={num2}
                     onChange={handleNum2Change}
-                    placeholder="Enter your height" className="border border-black p-2 h-6 rounded-sm w-32 text-sm sm:text-base"></input>
+                    placeholder="Enter your height" className="border border-black p-2 h-6 rounded-sm w-32 text-sm sm:text-base" required></input>
                     </div>
                 </div>
 
