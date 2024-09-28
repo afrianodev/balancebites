@@ -1,4 +1,4 @@
-import avocadoToast from '../assets/recipesImages/Avocado-toast-with-Eggs.png';
+// import avocadoToast from '../assets/recipesImages/Avocado-toast-with-Eggs.png';
 // import tunaSalad from '../assets/recipesImages/Tuna-Salad.png';
 // import lentilSoup from '../assets/recipesImages/Lentils-soup.png';
 // import beansTacos from '../assets/recipesImages/Beans-tacos.png';
@@ -20,7 +20,7 @@ export const healthyRecipes = [
         title: 'Avocado toast with Eggs',
         ingredients: 'Bread, ripe avocado, eggs, olive oil, salt, pepper, lemon juice, optional toppings (e.g., cherry tomatoes, red pepper flakes).',
         preparation: "Toast the bread and mash avocado with lemon juice, salt, and pepper. Spread on toast, top with a fried or poached egg, and season with additional toppings if desired.",
-        image: avocadoToast,
+        image: 'https://drive.google.com/uc?export=download&id=1mFUvDC47VyaZgmA7rJC-8m7VICc7F33I',
     },
     // {
     //     title: 'Tuna salad',
