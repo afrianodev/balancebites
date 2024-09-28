@@ -1,8 +1,18 @@
-import avocadoToast from '../assets/recipesImages/avocado-egg-toast.png'
-import lentilsSoup from '../assets/recipesImages/lentil-soup.png'
-import tacosBeans from '../assets/recipesImages/beans-taco.png'
-import veggieQuinoa from '../assets/recipesImages/veggie-quinoa.png'
-import tunaSalad from '../assets/recipesImages/tuna-salad.png'
+import avocadoToast from '../assets/recipesImages/Avocado-toast-with-Eggs.png';
+import tunaSalad from '../assets/recipesImages/Tuna-Salad.png';
+import lentilSoup from '../assets/recipesImages/Lentils-soup.png';
+import beansTacos from '../assets/recipesImages/Beans-tacos.png';
+import chickenStir from '../assets/recipesImages/Chicken-Stir-Fry.png';
+import veggieQuinoa from '../assets/recipesImages/Veggie-quinoa.png';
+import greekSalad from '../assets/recipesImages/Greek-Salad.png';
+import stuffedBell from '../assets/recipesImages/Stuffed-Bell-Peppers.png';
+import smoothieBowl from '../assets/recipesImages/Smoothie-Bowl.png';
+import zucchiniNoodle from '../assets/recipesImages/Zucchini-Noodles-with-Pesto.png';
+import roastedSalmon from '../assets/recipesImages/Roasted-Salmon-with-Veggies.png';
+import chickpeadSalad from '../assets/recipesImages/Chickpea-Salad.png';
+import chickenGrilled from '../assets/recipesImages/Grilled-Chicken-with-Asparagus.png';
+import spinachMushroom from '../assets/recipesImages/Spinach-and-Mushroom-Omelette.png';
+import roastedVegetables from '../assets/recipesImages/Roasted-Vegetables.png';
 
 
 export const healthyRecipes = [
@@ -22,13 +32,13 @@ export const healthyRecipes = [
         title: 'Beans tacos',
         ingredients: 'Cooked black beans, onion, garlic, chili powder, salt, pepper, tortillas, shredded lettuce, diced tomatoes, shredded cheese, sour cream, fresh cilantro.',
         preparation: "Sauté onion and garlic, then add spices and beans with broth. Heat through. Serve in warmed tortillas with toppings and lime.",
-        image: tacosBeans,
+        image: beansTacos,
     },
     {
         title: 'Lentils soup',
         ingredients: 'Lentils, onion, garlic, carrots, celery, vegetable or chicken broth, diced tomatoes, ground cumin, paprika, bay leaf, salt, pepper.',
         preparation: "Sauté onion, garlic, carrots, and celery in olive oil. Add lentils, broth, tomatoes, spices, and bay leaf. Simmer until lentils are tender.",
-        image: lentilsSoup,
+        image: lentilSoup,
     },
     {
         title: 'Veggie quinoa',
@@ -40,7 +50,7 @@ export const healthyRecipes = [
         title: 'Chicken Stir-Fry',
         ingredients: 'Chicken breast, bell peppers, broccoli, soy sauce, garlic, ginger, olive oil, sesame seeds, salt, pepper.',
         preparation: "Sauté garlic and ginger in olive oil. Add diced chicken and cook until golden. Stir-fry bell peppers and broccoli, then add soy sauce. Serve with sesame seeds.",
-        image: chickenStirFry,
+        image: chickenStir,
     },
     {
         title: 'Greek Salad',
@@ -52,7 +62,7 @@ export const healthyRecipes = [
         title: 'Stuffed Bell Peppers',
         ingredients: 'Bell peppers, ground turkey, quinoa, onion, garlic, tomato sauce, shredded cheese, salt, pepper, fresh parsley.',
         preparation: "Sauté onion and garlic, add ground turkey and cook through. Stir in quinoa and tomato sauce. Stuff into halved bell peppers, top with cheese, and bake.",
-        image: stuffedPeppers,
+        image: stuffedBell,
     },
     {
         title: 'Smoothie Bowl',
@@ -64,7 +74,7 @@ export const healthyRecipes = [
         title: 'Zucchini Noodles with Pesto',
         ingredients: 'Zucchini, garlic, basil pesto, cherry tomatoes, olive oil, salt, pepper, parmesan cheese (optional).',
         preparation: "Spiralize zucchini into noodles. Sauté garlic in olive oil, then add zucchini noodles and cook briefly. Toss with pesto and cherry tomatoes. Top with parmesan if desired.",
-        image: zucchiniNoodles,
+        image: zucchiniNoodle,
     },
     {
         title: 'Roasted Salmon with Veggies',
@@ -76,24 +86,24 @@ export const healthyRecipes = [
         title: 'Chickpea Salad',
         ingredients: 'Canned chickpeas, cucumber, red onion, cherry tomatoes, feta cheese, olive oil, lemon juice, parsley, salt, pepper.',
         preparation: "Mix drained chickpeas with chopped cucumber, red onion, and cherry tomatoes. Toss with olive oil, lemon juice, parsley, and crumbled feta.",
-        image: chickpeaSalad,
+        image: chickpeadSalad,
     },
     {
         title: 'Grilled Chicken with Asparagus',
         ingredients: 'Chicken breast, asparagus, olive oil, garlic, lemon zest, salt, pepper, paprika.',
         preparation: "Season chicken with paprika, salt, and pepper. Grill until cooked through. Toss asparagus with olive oil, garlic, and lemon zest, then grill until tender.",
-        image: grilledChicken,
+        image: chickenGrilled,
     },
     {
         title: 'Spinach and Mushroom Omelette',
         ingredients: 'Eggs, spinach, mushrooms, olive oil, garlic, salt, pepper, shredded cheese (optional).',
         preparation: "Sauté garlic and mushrooms in olive oil. Add spinach and cook until wilted. Whisk eggs and pour over the mixture. Cook until firm, then fold and serve with cheese.",
-        image: spinachOmelette,
+        image: spinachMushroom,
     },
     {
         title: 'Roasted Vegetables',
         ingredients: 'Zucchini, bell peppers, red onion, carrots, olive oil, balsamic vinegar, garlic, rosemary, salt, pepper.',
         preparation: "Toss chopped vegetables with olive oil, balsamic vinegar, garlic, and rosemary. Season with salt and pepper, then roast in the oven until tender and caramelized.",
-        image: roastedVeggies,
+        image: roastedVegetables,
     }
 ]
