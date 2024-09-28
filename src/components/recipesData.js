@@ -1,5 +1,5 @@
 import avocadoToast from '../assets/recipesImages/Avocado-toast-with-Eggs.png';
-import tunaSalad from '../assets/recipesImages/Tuna-Salad.png';
+// import tunaSalad from '../assets/recipesImages/Tuna-Salad.png';
 import lentilSoup from '../assets/recipesImages/Lentils-soup.png';
 import beansTacos from '../assets/recipesImages/Beans-tacos.png';
 import chickenStir from '../assets/recipesImages/Chicken-Stir-Fry.png';
@@ -22,12 +22,12 @@ export const healthyRecipes = [
         preparation: "Toast the bread and mash avocado with lemon juice, salt, and pepper. Spread on toast, top with a fried or poached egg, and season with additional toppings if desired.",
         image: avocadoToast,
     },
-    {
-        title: 'Tuna salad',
-        ingredients: 'Canned tuna, mayonnaise, celery, red onion, Dijon mustard, lemon juice, salt, pepper, fresh herbs (e.g., parsley).',
-        preparation: "Mix drained tuna with mayonnaise, chopped celery, red onion, mustard, lemon juice, and season with salt and pepper. Add fresh herbs if desired.",
-        image: tunaSalad,
-    },
+    // {
+    //     title: 'Tuna salad',
+    //     ingredients: 'Canned tuna, mayonnaise, celery, red onion, Dijon mustard, lemon juice, salt, pepper, fresh herbs (e.g., parsley).',
+    //     preparation: "Mix drained tuna with mayonnaise, chopped celery, red onion, mustard, lemon juice, and season with salt and pepper. Add fresh herbs if desired.",
+    //     image: tunaSalad,
+    // },
     {
         title: 'Beans tacos',
         ingredients: 'Cooked black beans, onion, garlic, chili powder, salt, pepper, tortillas, shredded lettuce, diced tomatoes, shredded cheese, sour cream, fresh cilantro.',
