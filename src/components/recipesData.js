@@ -1,109 +1,122 @@
-import avocadoToast from '../assets/recipesImages/Avocado-toast-with-Eggs.jpg';
-import tunaSalad from '../assets/recipesImages/Tuna-Salad.jpg';
-import lentilSoup from '../assets/recipesImages/Lentils-soup.jpg';
-import beansTacos from '../assets/recipesImages/Beans-tacos.jpg';
-import chickenStir from '../assets/recipesImages/Chicken-Stir-Fry.jpg';
-import veggieQuinoa from '../assets/recipesImages/Veggie-quinoa.jpg';
-import greekSalad from '../assets/recipesImages/Greek-Salad.jpg';
-import stuffedBell from '../assets/recipesImages/Stuffed-Bell-Peppers.jpg';
-import smoothieBowl from '../assets/recipesImages/Smoothie-Bowl.jpg';
-import zucchiniNoodle from '../assets/recipesImages/Zucchini-Noodles-with-Pesto.jpg';
-import roastedSalmon from '../assets/recipesImages/Roasted-Salmon-with-Veggies.jpg';
-import chickpeadSalad from '../assets/recipesImages/Chickpea-Salad.jpg';
-import chickenGrilled from '../assets/recipesImages/Grilled-Chicken-with-Asparagus.jpg';
-import spinachMushroom from '../assets/recipesImages/Spinach-and-Mushroom-Omelette.jpg';
-import roastedVegetables from '../assets/recipesImages/Roasted-Vegetables.jpg';
-
-
 export const healthyRecipes = [
+    {
+        title: 'Cauliflower Rice Stir-Fry',
+        ingredients: 'Cauliflower rice, bell peppers, peas, carrots, soy sauce, garlic, ginger, sesame oil, green onions.',
+        preparation: "Sauté garlic and ginger in sesame oil. Add cauliflower rice and cook until tender. Stir in chopped vegetables, soy sauce, and top with green onions.",
+        image: 'https://i.imgur.com/GJvksj6.png',
+    },
+    {
+        title: 'Baked Sweet Potato Fries',
+        ingredients: 'Sweet potatoes, olive oil, paprika, garlic powder, salt, pepper, fresh parsley (optional).',
+        preparation: "Cut sweet potatoes into fries. Toss with olive oil, paprika, garlic powder, salt, and pepper. Bake until crispy and garnish with parsley.",
+        image: 'https://i.imgur.com/OuOkFtk.png',
+    },
+    {
+        title: 'Mediterranean Grain Bowl',
+        ingredients: 'Quinoa or farro, chickpeas, cucumber, cherry tomatoes, olives, feta cheese, tzatziki sauce, olive oil, lemon juice.',
+        preparation: "Cook quinoa or farro. Combine with chickpeas, chopped cucumber, tomatoes, olives, and feta. Drizzle with olive oil, lemon juice, and serve with tzatziki sauce.",
+        image: 'https://i.imgur.com/u12EXUq.png',
+    },
+    {
+        title: 'Turkey Lettuce Wraps',
+        ingredients: 'Ground turkey, lettuce leaves, soy sauce, hoisin sauce, garlic, ginger, green onions, shredded carrots.',
+        preparation: "Sauté garlic and ginger. Add ground turkey and cook until browned. Stir in soy sauce, hoisin sauce, and shredded carrots. Serve in lettuce leaves, topped with green onions.",
+        image: 'https://i.imgur.com/mmixy3m.png',
+    },
+    {
+        title: 'Berry Chia Pudding',
+        ingredients: 'Chia seeds, almond milk, vanilla extract, honey, mixed berries, shredded coconut.',
+        preparation: "Mix chia seeds with almond milk, vanilla, and honey. Let sit in the fridge overnight. Serve topped with mixed berries and shredded coconut.",
+        image: 'https://i.imgur.com/DsmCODw.png',
+    },
     {
         title: 'Avocado toast with Eggs',
         ingredients: 'Bread, ripe avocado, eggs, olive oil, salt, pepper, lemon juice, optional toppings (e.g., cherry tomatoes, red pepper flakes).',
         preparation: "Toast the bread and mash avocado with lemon juice, salt, and pepper. Spread on toast, top with a fried or poached egg, and season with additional toppings if desired.",
-        image: avocadoToast,
+        image: 'https://i.imgur.com/B3TWGMj.png',
     },
     {
         title: 'Tuna salad',
         ingredients: 'Canned tuna, mayonnaise, celery, red onion, Dijon mustard, lemon juice, salt, pepper, fresh herbs (e.g., parsley).',
         preparation: "Mix drained tuna with mayonnaise, chopped celery, red onion, mustard, lemon juice, and season with salt and pepper. Add fresh herbs if desired.",
-        image: tunaSalad,
+        image: 'https://i.imgur.com/3r0vgjS.png',
     },
     {
         title: 'Beans tacos',
         ingredients: 'Cooked black beans, onion, garlic, chili powder, salt, pepper, tortillas, shredded lettuce, diced tomatoes, shredded cheese, sour cream, fresh cilantro.',
         preparation: "Sauté onion and garlic, then add spices and beans with broth. Heat through. Serve in warmed tortillas with toppings and lime.",
-        image: beansTacos,
+        image: 'https://i.imgur.com/6jVNWDH.png',
     },
     {
         title: 'Lentils soup',
         ingredients: 'Lentils, onion, garlic, carrots, celery, vegetable or chicken broth, diced tomatoes, ground cumin, paprika, bay leaf, salt, pepper.',
         preparation: "Sauté onion, garlic, carrots, and celery in olive oil. Add lentils, broth, tomatoes, spices, and bay leaf. Simmer until lentils are tender.",
-        image: lentilSoup,
+        image: 'https://i.imgur.com/ORZiA22.png',
     },
     {
         title: 'Veggie quinoa',
         ingredients: 'Quinoa, bell peppers, zucchini, cherry tomatoes, onion, garlic, vegetable broth, salt, pepper, fresh herbs (e.g., parsley).',
         preparation: "Sauté onion and garlic in olive oil, add chopped vegetables and cook until tender. Stir in cooked quinoa, broth, lemon juice, and season with salt, pepper, and herbs.",
-        image: veggieQuinoa,
+        image: 'https://i.imgur.com/UbfzEb6.png',
     },
     {
         title: 'Chicken Stir-Fry',
         ingredients: 'Chicken breast, bell peppers, broccoli, soy sauce, garlic, ginger, olive oil, sesame seeds, salt, pepper.',
         preparation: "Sauté garlic and ginger in olive oil. Add diced chicken and cook until golden. Stir-fry bell peppers and broccoli, then add soy sauce. Serve with sesame seeds.",
-        image: chickenStir,
+        image: 'https://i.imgur.com/acmE6iu.png',
     },
     {
         title: 'Greek Salad',
         ingredients: 'Cucumber, tomatoes, red onion, feta cheese, kalamata olives, olive oil, lemon juice, oregano, salt, pepper.',
         preparation: "Chop cucumber, tomatoes, and red onion. Mix with feta and olives. Dress with olive oil, lemon juice, oregano, salt, and pepper.",
-        image: greekSalad,
+        image: 'https://i.imgur.com/GXVoSJ3.png',
     },
     {
         title: 'Stuffed Bell Peppers',
         ingredients: 'Bell peppers, ground turkey, quinoa, onion, garlic, tomato sauce, shredded cheese, salt, pepper, fresh parsley.',
         preparation: "Sauté onion and garlic, add ground turkey and cook through. Stir in quinoa and tomato sauce. Stuff into halved bell peppers, top with cheese, and bake.",
-        image: stuffedBell,
+        image: 'https://i.imgur.com/1mT6TVB.png',
     },
     {
         title: 'Smoothie Bowl',
         ingredients: 'Frozen mixed berries, banana, almond milk, chia seeds, granola, shredded coconut, fresh fruit toppings.',
         preparation: "Blend frozen berries, banana, and almond milk until smooth. Pour into a bowl and top with chia seeds, granola, coconut, and fresh fruit.",
-        image: smoothieBowl,
+        image: 'https://i.imgur.com/2bTr8EB.png',
     },
     {
         title: 'Zucchini Noodles with Pesto',
         ingredients: 'Zucchini, garlic, basil pesto, cherry tomatoes, olive oil, salt, pepper, parmesan cheese (optional).',
         preparation: "Spiralize zucchini into noodles. Sauté garlic in olive oil, then add zucchini noodles and cook briefly. Toss with pesto and cherry tomatoes. Top with parmesan if desired.",
-        image: zucchiniNoodle,
+        image: 'https://i.imgur.com/x010bHL.png',
     },
     {
         title: 'Roasted Salmon with Veggies',
         ingredients: 'Salmon fillets, broccoli, carrots, olive oil, lemon juice, garlic, salt, pepper, fresh dill.',
         preparation: "Drizzle salmon and veggies with olive oil, garlic, and lemon juice. Season with salt, pepper, and dill. Roast in the oven until cooked through.",
-        image: roastedSalmon,
+        image: 'https://i.imgur.com/SYalP5w.png',
     },
     {
         title: 'Chickpea Salad',
         ingredients: 'Canned chickpeas, cucumber, red onion, cherry tomatoes, feta cheese, olive oil, lemon juice, parsley, salt, pepper.',
         preparation: "Mix drained chickpeas with chopped cucumber, red onion, and cherry tomatoes. Toss with olive oil, lemon juice, parsley, and crumbled feta.",
-        image: chickpeadSalad,
+        image: 'https://i.imgur.com/sxpcyQ1.png',
     },
     {
         title: 'Grilled Chicken with Asparagus',
         ingredients: 'Chicken breast, asparagus, olive oil, garlic, lemon zest, salt, pepper, paprika.',
         preparation: "Season chicken with paprika, salt, and pepper. Grill until cooked through. Toss asparagus with olive oil, garlic, and lemon zest, then grill until tender.",
-        image: chickenGrilled,
+        image: 'https://i.imgur.com/TVAaZtq.png',
     },
     {
         title: 'Spinach and Mushroom Omelette',
         ingredients: 'Eggs, spinach, mushrooms, olive oil, garlic, salt, pepper, shredded cheese (optional).',
         preparation: "Sauté garlic and mushrooms in olive oil. Add spinach and cook until wilted. Whisk eggs and pour over the mixture. Cook until firm, then fold and serve with cheese.",
-        image: spinachMushroom,
+        image: 'https://i.imgur.com/ZyNNxOs.png',
     },
     {
         title: 'Roasted Vegetables',
         ingredients: 'Zucchini, bell peppers, red onion, carrots, olive oil, balsamic vinegar, garlic, rosemary, salt, pepper.',
         preparation: "Toss chopped vegetables with olive oil, balsamic vinegar, garlic, and rosemary. Season with salt and pepper, then roast in the oven until tender and caramelized.",
-        image: roastedVegetables,
+        image: 'https://i.imgur.com/kqplEGL.png',
     }
 ]
