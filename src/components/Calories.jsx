@@ -28,13 +28,13 @@ export default function Calories() {
   }
 
 const handleInputChange = (e) => {
-  setQuery(e.target.value); // Update the query data
+  setQuery(e.target.value);
   console.log(e.target.value);
 };
 
 const handleKeyDown = (e) => {
   if (e.key === "Enter") {
-    handleSearch(); // Llama a la función de búsqueda si se presiona Enter
+    handleSearch();
   }
 };
 
