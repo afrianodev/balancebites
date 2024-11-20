@@ -1,3 +1,4 @@
+import Calories from "./components/Calories.jsx";
 import CountMacros from "./components/CountMacros.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
@@ -63,10 +64,13 @@ function App() {
         <Header />
       </motion.div>
       <motion.div variants={childVariants2}>
-        <Recipes /> 
+        <Calories />
       </motion.div>
       <motion.div variants={childVariants3}>
         <CountMacros />
+      </motion.div>
+      <motion.div variants={childVariants2}>
+        <Recipes /> 
       </motion.div>
       <motion.div variants={childVariants}>
         <Footer />
@@ -79,3 +83,4 @@ export default App;
 
 //add animation to the calc macros section (opacity)
 //add new section with ninjaAPI
+//add a conditional on the random recipe, to avoid the repeat of recipes

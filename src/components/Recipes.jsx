@@ -44,7 +44,7 @@ export default function Recipes() {
 
 
   return (
-    <motion.section id='random-recipes' className="mx-auto w-[92vw] sm:w-[60vw] sm:h-[45vh] overflow-hidden cursor-pointer select-none shadow-md" onClick={handleClick}>
+    <motion.section id='random-recipes' className="mx-auto w-[92vw] sm:w-[60vw] sm:h-[45vh] overflow-hidden cursor-pointer select-none shadow-md mt-6 sm:mt-10" onClick={handleClick}>
       <p className="text-xs sm:text-base mt-1">
         Click for another inspiration recipe.
       </p>
