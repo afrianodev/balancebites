@@ -12,16 +12,19 @@ export default function Calories() {
       alert("Please type something!");
       return;
     }
-    axios.get('/api/nutrition', {
-      params: { query }
-    })
-    .then(response => {
-      setResult(response.data);
-      console.log(response.data);
-    })
-    .catch(error => {
+    axios.get('https://api.calorieninjas.com/v1/nutrition', {
+      params: { query },
+      headers: {
+          'X-Api-Key': '+zw0Mia8661TS01cS6CYzA==sx0W6Gx65FhlulYt'
+      }
+  })
+  .then(response => {
+      setResult(response.data); 
+      console.log(response.data); 
+  })
+  .catch(error => {
       console.error('Error:', error);
-    });
+  });
 
   setQuery('')
 
