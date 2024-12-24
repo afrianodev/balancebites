@@ -1,8 +1,9 @@
 <h1>BalanceBites</h1>
 <p><strong>BalanceBites</strong> is a nutrition app designed to help you maintain a healthier lifestyle.<br>
-You can get a random healthy recipe clicking in the first banner.<br>
-In the second section of the app, you can calculate your macros based on your gender, age, weight, height, and activity level.</p>
-<img src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzF0cDZua2lheXhvaHF2bmVwM2U3ZWE1bnU1Ymg0YWJ1b3EzdTU3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jb07WLXnyM6R7WNNHb/giphy.gif' alt'BalanceBites complete page'>
+You can search the calories and macros of any food you type in the first section input.<br>
+In the second section of the app, you can calculate your macros based on your gender, age, weight, height, and activity level.<br>
+And you can get a random healthy recipe clicking in the last section.</p>
+<img src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzF0cDZua2lheXhvaHF2bmVwM2U3ZWE1bnU1Ymg0YWJ1b3EzdTU3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jb07WLXnyM6R7WNNHb/giphy.gif' alt='BalanceBites complete page'>
 <p>You can explore the live version, which is deployed on Vercel. <strong><a href='https://balancebites.vercel.app/' target="_blank">Live Demo</a></strong></p>
 <h2>Install</h2>
 <p>To get a local copy up and running, make sure you have Node.JS and npm installed, and follow these steps:</p>
