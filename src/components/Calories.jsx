@@ -1,7 +1,7 @@
 import { healthyRecipes } from "./recipesData";
 import { useState } from "react";
-import { delay, motion } from "framer-motion";
 import axios from 'axios';
+import dotenv from 'dotenv'
 
 export default function Calories() {
   const [query, setQuery] = useState('');
@@ -15,7 +15,7 @@ export default function Calories() {
     axios.get('https://api.calorieninjas.com/v1/nutrition', {
       params: { query },
       headers: {
-          'X-Api-Key': '+zw0Mia8661TS01cS6CYzA==sx0W6Gx65FhlulYt'
+          'X-Api-Key': process.env.CALORIES_API
       }
   })
   .then(response => {
