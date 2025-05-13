@@ -1,7 +1,6 @@
 import { healthyRecipes } from "./recipesData";
 import { useState } from "react";
 import axios from 'axios';
-import dotenv from 'dotenv'
 
 export default function Calories() {
   const [query, setQuery] = useState('');
@@ -15,12 +14,11 @@ export default function Calories() {
     axios.get('https://api.calorieninjas.com/v1/nutrition', {
       params: { query },
       headers: {
-          'X-Api-Key': process.env.CALORIES_API
+          'X-Api-Key': import.meta.env.VITE_CALORIES_API
       }
   })
   .then(response => {
       setResult(response.data); 
-      console.log(response.data); 
   })
   .catch(error => {
       console.error('Error:', error);
@@ -32,7 +30,6 @@ export default function Calories() {
 
 const handleInputChange = (e) => {
   setQuery(e.target.value);
-  console.log(e.target.value);
 };
 
 const handleKeyDown = (e) => {
@@ -43,7 +40,7 @@ const handleKeyDown = (e) => {
 
   return (
     <section id='random-recipes' className="mx-auto w-[92vw] sm:w-[60vw] h-[auto] pt-2 overflow-hidden select-none shadow-md count-macros">
-      <h2 className="text-xl sm:text-2xl font-semibold">Search <span>macros and calories</span> of any food</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold">Look up <span>the macros and calories</span> of any food</h2>
       <div className="flex justify-center relative mx-auto w-[80%] mt-4 mb-2">
         <input type="text" onChange={handleInputChange} onKeyDown={handleKeyDown} value={query} placeholder="Type the food name" className="w-[300px] border border-gray-400 rounded-[10px] pl-2" />
         <button onClick={handleSearch} className="px-2 py-1 rounded-[10px] ml-2 w-[150px]">Search food</button>
