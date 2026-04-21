@@ -30,7 +30,11 @@ cp .env.example .env
 npm install
 npm run dev</pre>
   Base URL: <a href="http://localhost:3001/">http://localhost:3001/</a> — <code>GET /health</code><br>
-  Register: <code>POST /api/auth/register</code> with JSON body <code>{ "name", "email", "password" }</code> (password ≥ 8 chars).</li>
+  <strong>Auth:</strong> <code>POST /api/auth/register</code> — body <code>{ "name", "email", "password" }</code> (password ≥ 8).<br>
+  <strong>Users</strong> (<code>:id</code> = UUID del usuario; sin JWT por ahora):<br>
+  <code>PATCH /api/users/:id</code> — body opcional <code>name</code> y/o <code>email</code> (al menos uno).<br>
+  <code>DELETE /api/users/:id</code> — borra el usuario.<br>
+  <code>PATCH /api/users/:id/password</code> — body <code>{ "currentPassword", "newPassword" }</code> (nueva ≥ 8).</li>
 </ol>
 <p>Environment variables for the client (e.g. Calorie Ninjas) belong in <code>client/.env</code> as before (e.g. <code>VITE_CALORIES_API</code>). The API reads <code>DATABASE_URL</code> from <code>server/.env</code>.</p>
 <p><strong>Server layout:</strong> <code>routes/</code> (HTTP paths), <code>controllers/</code> (request/response), <code>services/</code> (business logic + DB), <code>db/</code> (Postgres pool), <code>middleware/</code>, <code>utils/</code>.</p>
